@@ -1,0 +1,4 @@
+#! /usr/bin/bash
+source images
+rand=$[$RANDOM % ${#IMAGES[@]}]
+wget https://earthview.withgoogle.com/download/${IMAGES[$rand]}.jpg -O ~/wallpaper.jpg
